@@ -3,6 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\EletroController;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -14,6 +16,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
+Route::post('test-connection', function (){
+    return ['Hello World'];
+});
+
+Route::group(['prefix' => 'eletro'], function () {
+    //Route::get('/listing', [UserController::class, 'listing']);
+    Route::post('/store', [EletroController::class, 'store']);
+    //Route::get('/show/{id}', [UserController::class, 'show']);
+    //Route::put('/update/{id}', [UserController::class, 'update']);
+    //Route::put('/update-credential/{id}', [UserController::class, 'updateCredential']);
+    //Route::post('/update-img/{id}', [UserController::class, 'updateImg']);
+    //Route::delete('/delete/{id}', [UserController::class, 'delete']);
 });
