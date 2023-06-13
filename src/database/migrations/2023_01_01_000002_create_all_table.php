@@ -19,7 +19,7 @@ return new class extends Migration {
                 //COLUNAS
                 $table->id();
                 $table->string('nome', 100);
-                $table->tinyText('descricao');
+                $table->text('descricao');
                 $table->integer('tensao');
                 $table->unsignedBigInteger('marca_id', false);
             });

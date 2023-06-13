@@ -9,10 +9,11 @@ class Marca extends Model
 {
     use HasFactory;
     protected $table = 'marcas';
+    public $timestamps = false;
     protected $fillable = ['nome'];
 
-    public function Eletrodomestico()
+    public function Eletro()
     {
-        return $this->hasMany(Eletrodomestico::class);
+        return $this->hasMany(Eletro::class);
     }
 }
