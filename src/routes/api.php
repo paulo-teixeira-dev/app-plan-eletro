@@ -21,7 +21,7 @@ Route::post('test-connection', function (){
 });
 
 Route::group(['prefix' => 'eletro'], function () {
-    //Route::get('/listing', [UserController::class, 'listing']);
+    Route::get('/listing', [EletroController::class, 'listing']);
     Route::post('/store', [EletroController::class, 'store']);
     //Route::get('/show/{id}', [UserController::class, 'show']);
     //Route::put('/update/{id}', [UserController::class, 'update']);

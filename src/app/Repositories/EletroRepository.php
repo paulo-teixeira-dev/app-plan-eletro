@@ -18,6 +18,16 @@ class EletroRepository implements EletroRepositoryInterface
         $this->eletroModel = $eletroModel;
     }
 
+    public function listing()
+    {
+        try {
+            $eletro = $this->eletroModel->all();
+            return $this->apiHelper->response($eletro);
+        } catch (\Exception $e) {
+            return $this->apiHelper->response(null, 'er', null, 500);
+        }
+    }
+
     public function store($eletro)
     {
         DB::beginTransaction();

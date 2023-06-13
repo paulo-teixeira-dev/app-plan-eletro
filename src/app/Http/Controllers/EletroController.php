@@ -18,6 +18,11 @@ class EletroController extends Controller
         $this->eletroRepository = $eletroRepository;
     }
 
+    public function listing()
+    {
+        return $this->eletroRepository->listing();
+    }
+
     public function store(Request $request)
     {
         /** validação **/
