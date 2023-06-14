@@ -73,4 +73,23 @@ class EletroRepository implements EletroRepositoryInterface
             return $this->apiHelper->response(null, 'er', null, 500);
         }
     }
+
+    public function delete($id)
+    {
+        DB::beginTransaction();
+        try {
+            /** delete **/
+            $eletro = $this->eletroModel->find($id);
+
+            if (!$eletro)
+                return $this->apiHelper->response(null, 'nf');
+
+            $eletro->delete();
+            DB::commit();
+            return $this->apiHelper->response();
+        } catch (\Exception $e) {
+            DB::rollBack();
+            return $this->apiHelper->response(null, 'er', null, 500);
+        }
+    }
 }

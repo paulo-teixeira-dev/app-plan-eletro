@@ -62,6 +62,8 @@ class EletroController extends Controller
         return $this->eletroRepository->update($request->all(), $id);
     }
 
-
-
+    public function delete($id)
+    {
+        return $this->eletroRepository->delete($id);
+    }
 }
