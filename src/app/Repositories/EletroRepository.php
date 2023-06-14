@@ -54,4 +54,23 @@ class EletroRepository implements EletroRepositoryInterface
             return $this->apiHelper->response(null, 'er', null, 500);
         }
     }
+
+    public function update($eletro, $id)
+    {
+        DB::beginTransaction();
+        try {
+            /** atualização **/
+            $eletroUpdate = $this->eletroModel->find($id);
+
+            if (!$eletroUpdate)
+                return $this->apiHelper->response(null, 'nf');
+
+            $eletroUpdate->update($eletro);
+            DB::commit();
+            return $this->apiHelper->response();
+        } catch (\Exception $e) {
+            DB::rollBack();
+            return $this->apiHelper->response(null, 'er', null, 500);
+        }
+    }
 }

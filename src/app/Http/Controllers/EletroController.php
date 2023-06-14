@@ -45,5 +45,23 @@ class EletroController extends Controller
         return $this->eletroRepository->show($id);
     }
 
+    public function update(Request $request, $id)
+    {
+        /** validação **/
+        $validator = Validator::make($request->all(), [
+            'nome' => 'required|max:100',
+            'descricao' => 'required',
+            'tensao' => 'required|integer',
+            'marca_id' => 'required|integer|exists:App\Models\Marca,id',
+        ]);
+
+        if ($validator->fails()) {
+            return $this->apiHelper->response(null, 'er', $validator->messages()->all());
+        }
+
+        return $this->eletroRepository->update($request->all(), $id);
+    }
+
+
 
 }
