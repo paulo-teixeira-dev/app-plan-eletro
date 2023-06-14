@@ -38,7 +38,11 @@ class EletroController extends Controller
         }
 
         return $this->eletroRepository->store($request->all());
+    }
 
+    public function show($id)
+    {
+        return $this->eletroRepository->show($id);
     }
 
 

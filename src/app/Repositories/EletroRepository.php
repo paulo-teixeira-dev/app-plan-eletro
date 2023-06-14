@@ -24,7 +24,7 @@ class EletroRepository implements EletroRepositoryInterface
             $eletro = $this->eletroModel->all();
             return $this->apiHelper->response($eletro);
         } catch (\Exception $e) {
-            return $this->apiHelper->response(null, 'er', null, 500);
+            return $this->apiHelper->response($e->getMessage(), 'er', null, 500);
         }
     }
 
@@ -38,6 +38,19 @@ class EletroRepository implements EletroRepositoryInterface
             return $this->apiHelper->response();
         } catch (\Exception $e) {
             DB::rollBack();
+            return $this->apiHelper->response(null, 'er', null, 500);
+        }
+    }
+
+    public function show($id)
+    {
+        try {
+            $eletro = $this->eletroModel->find($id);
+            if ($eletro)
+                return $this->apiHelper->response($eletro);
+            else
+                return $this->apiHelper->response(null, 'nf');
+        } catch (\Exception $e) {
             return $this->apiHelper->response(null, 'er', null, 500);
         }
     }
