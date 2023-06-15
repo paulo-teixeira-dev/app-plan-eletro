@@ -154,7 +154,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../cs-app-postgresql" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -187,7 +187,7 @@
       <workItem from="1686773203630" duration="25000" />
       <workItem from="1686776582272" duration="580000" />
       <workItem from="1686837589715" duration="841000" />
-      <workItem from="1686838535884" duration="1428000" />
+      <workItem from="1686838535884" duration="2944000" />
     </task>
     <servers />
   </component>
@@ -207,9 +207,9 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1686777161536">
+    <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1686840736275">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1686777161536" />
+    <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1686840736275" />
   </component>
 </project>
