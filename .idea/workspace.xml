@@ -154,7 +154,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/app/Models" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -164,6 +164,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="\\wsl$\Ubuntu\home\pauloteixeira\dev-env\github-paulo-teixeira\app-plan-eletro\src\app\Repositories" />
+      <recent name="\\wsl$\Ubuntu\home\pauloteixeira\dev-env\github-paulo-teixeira\app-plan-eletro\src\app\Interfaces" />
+      <recent name="\\wsl$\Ubuntu\home\pauloteixeira\dev-env\github-paulo-teixeira\app-plan-eletro\src\app\Http\Controllers" />
       <recent name="\\wsl$\Ubuntu\home\pauloteixeira\dev-env\github-paulo-teixeira\app-plan-eletro\src\app\Models" />
     </key>
   </component>
@@ -179,7 +182,12 @@
       <updated>1686679800358</updated>
       <workItem from="1686679801925" duration="103000" />
       <workItem from="1686680109696" duration="94000" />
-      <workItem from="1686680205151" duration="17494000" />
+      <workItem from="1686680205151" duration="18055000" />
+      <workItem from="1686772775871" duration="306000" />
+      <workItem from="1686773203630" duration="25000" />
+      <workItem from="1686776582272" duration="580000" />
+      <workItem from="1686837589715" duration="841000" />
+      <workItem from="1686838535884" duration="1428000" />
     </task>
     <servers />
   </component>
@@ -199,9 +207,9 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1686680197682">
+    <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1686777161536">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1686680197682" />
+    <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1686777161536" />
   </component>
 </project>

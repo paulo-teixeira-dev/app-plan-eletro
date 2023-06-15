@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\EletroController;
+use App\Http\Controllers\MarcaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,4 +27,8 @@ Route::group(['prefix' => 'eletro'], function () {
     Route::get('/show/{id}', [EletroController::class, 'show']);
     Route::put('/update/{id}', [EletroController::class, 'update']);
     Route::delete('/delete/{id}', [EletroController::class, 'delete']);
+});
+
+Route::group(['prefix' => 'marca'], function () {
+    Route::get('/listing', [MarcaController::class, 'listing']);
 });

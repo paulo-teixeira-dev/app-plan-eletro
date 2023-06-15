@@ -45,13 +45,13 @@ class EletroRepository implements EletroRepositoryInterface
     public function show($id)
     {
         try {
-            $eletro = $this->eletroModel->find($id);
+            $eletro = $this->eletroModel->where('id', $id)->with(['Marca'])->first();
             if ($eletro)
                 return $this->apiHelper->response($eletro);
             else
                 return $this->apiHelper->response(null, 'nf');
         } catch (\Exception $e) {
-            return $this->apiHelper->response(null, 'er', null, 500);
+            return $this->apiHelper->response($e->getMessage(), 'er', null, 500);
         }
     }
 
