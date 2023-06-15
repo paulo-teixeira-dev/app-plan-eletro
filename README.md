@@ -33,6 +33,19 @@ Acesse o diretório
 cd src/
 ```
 
+Copie o arquivo Env
+
+```
+cp .env.example .env
+```
+
+Crie uma nova chave para a aplicação
+
+```
+sudo docker compose exec php php artisan key:generate
+```
+obs: logo após deverá preencher o arquivo env com as configurações do banco de dados conforme descrito no final deste arquivo.
+
 Execute a migração
 
 ```
