@@ -5,7 +5,7 @@
 - PHP (Laravel)
 - PostgreSQL
 - PgAdmin
-- nginx
+- Nginx
 
 ### Ambiente de desenvolvimento
 
@@ -76,9 +76,22 @@ Navege até Servers > Register > Server para preecher os campos necessarios de c
 | Connection > Username | localdev |
 | Connection > Password | localdev@123 |
 
+### Rotas
+
+| Rota  | Página |
+| --- | --- |
+| http://localhost:3000/api/eletro/listing | Listagem |
+| http://localhost:3000/api/eletro/show/{id} | Visualizar |
+| http://localhost:3000/api/eletro/store | Cadastrar |
+| http://localhost:3000/api/eletro/update/{id} | Atualizar |
+| http://localhost:3000/api/eletro/delete/{id} | Deletar |
+| http://localhost:3000/api/marca/listing | Listagem das marcas |
+  
 ### Portas
 | Serviço  | Porta |
 | --- | --- |
+| Nginx | 3000 |
+| PHP | 9000 |
 | PostgreSQL | 5432 |
 | PgAdmin | 3400 |
 
