@@ -5,6 +5,7 @@
 - PHP (Laravel)
 - PostgreSQL
 - PgAdmin
+- nginx
 
 ### Ambiente de desenvolvimento
 
