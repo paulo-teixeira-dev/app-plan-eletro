@@ -44,7 +44,9 @@ Crie uma nova chave para a aplicação
 ```
 sudo docker compose exec php php artisan key:generate
 ```
-obs: logo após deverá preencher o arquivo env com as configurações do banco de dados conforme descrito no final deste arquivo.
+obs: 
+- logo após deverá preencher o arquivo env com as configurações do banco de dados conforme descrito no final deste arquivo.
+- No arquivo env, em configurações do banco de dados, o DB_CONNECTION deverá ser "pgsql".
 
 Execute a migração
 
