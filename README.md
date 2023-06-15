@@ -48,10 +48,10 @@ Navege até Servers > Register > Server para preecher os campos necessarios de c
 
 | Campo  | Valor |
 | --- | --- |
-| General > Name | cs-postgresql | 
-| Connection > Host name/address | cs-postgresql |
+| General > Name | plan | 
+| Connection > Host name/address | pgsql |
 | Connection > Port | 5432 |
-| Connection > Maintenance database | db_cs |
+| Connection > Maintenance database | db_plan_eletro |
 | Connection > Username | localdev |
 | Connection > Password | localdev@123 |
 
