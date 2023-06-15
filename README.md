@@ -78,7 +78,7 @@ Navege até Servers > Register > Server para preecher os campos necessarios de c
 
 ### Rotas
 
-| Rota  | Página |
+| Rota  | Função |
 | --- | --- |
 | http://localhost:3000/api/eletro/listing | Listagem |
 | http://localhost:3000/api/eletro/show/{id} | Visualizar |
