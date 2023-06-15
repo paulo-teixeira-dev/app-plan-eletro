@@ -11,6 +11,12 @@
 
 - Instale o docker no WSL(Windows Subsystem for Linux) com Ubuntu LTS 
 
+### Permissões
+```
+sudo chmod -R 777 src
+```
+O comando está concedendo permissões completas de leitura, escrita e execução para todos os usuários em todos os arquivos e pastas dentro do diretório "src" e seus subdiretórios. O laravel precisará que isto seja executado para poder operar corretamente.
+
 ### Configurando ambiente e construindo containers
 
 Criando o diretório de volumes do PostgreSQL.
